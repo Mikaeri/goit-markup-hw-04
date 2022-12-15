@@ -210,7 +210,14 @@ body {
 /* ___________HERO____________ */
 .hero {
 	font-weight: 600;
+
 	background-color: var(--dark-color);
+	background-image:
+	 linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+	 url(../image/main/bg-no-opt.jpg);
+	 background-size: 1440px;
+	 background-repeat: no-repeat;
+	 background-position:center;
 
 	padding-top: 192px;
 	padding-bottom: 192px;
@@ -279,6 +286,19 @@ body {
 	margin-bottom: var(--main-value);
 }
 
+.soft-skill-icons {
+	width:64px;
+	height:64px;
+	display: block;
+	box-sizing: content-box;
+
+	background-color: var(--light-color);
+    border-radius: 4px;
+	padding: 24px 100px;
+
+	fill:var(--dark-color);
+	margin-bottom: 8px;
+	}
 
 .soft-skill-text {}
 
@@ -339,7 +359,71 @@ body {
 
 .team-position {
 	text-align: center;
+	margin-bottom: 12px;
 }
+
+.team-social-list {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	gap:12px;
+	margin: 0,auto;
+	
+}
+
+.team-social-item {
+}
+
+.team-social-link {
+	display: flex;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+	width:40px;
+	height:40px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.team-social-icon {
+    width: 16px;
+    height: 16px;
+	fill:var(--light-color)
+}
+
+
+/* ____CUSTOMERS____ */
+
+.customers {
+}
+
+.customer-list {
+	display: flex;
+	gap:24px;
+	justify-content:center;
+	
+}
+.customer-item:hover,
+.customer-item:focus{
+fill:var(--primary-brand-color);
+border-color: var(--primary-brand-color);
+}
+
+.customer-link{
+	display:block;
+	border: 1px solid #8E8F99;
+    border-radius: 4px;
+	padding:16px 32px;
+}
+
+.customer-icon {
+	width: 104px;
+	height:56px;
+	fill:var(--sub-text-color);
+
+
+}
+
 
 
 /* ___________FOOTER__________ */
@@ -349,6 +433,14 @@ body {
 	padding-top: 100px;
 	padding-bottom: 100px;
 	}
+
+.footer>.container{
+	display: flex;
+}
+
+.footer-container {
+}
+
 .footer .logo{
 	margin-right: 0;
 	padding: 0;
@@ -366,6 +458,40 @@ body {
 	max-width: 264px;
     margin-top: 16px;
 }
+
+.footer-social-container {
+	margin-left: 120px;
+}
+
+.social-media {
+font-weight: 600;
+line-height: 1.5;
+
+color: var(--doc-color);
+margin-bottom: 16px;
+}
+.footer-social-list {
+	display:flex;
+	gap: 16px;
+}
+.footer-social-item {
+}
+.footer-social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 8px;
+	border-radius: 50%;
+
+}
+
+.footer-social-icon {
+	width:24px;
+	height:24px;
+	fill:var(--light-color)
+}
+
 
 /* ___________PORTFOLIO________ */
 
@@ -402,8 +528,8 @@ body {
 	background-color: var(--primary-brand-color);
 	color: var(--doc-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-		0px 2px 1px rgba(0, 0, 0, 0.08),
-		0px 2px 2px rgba(0, 0, 0, 0.12);
+				0px 2px 1px rgba(0, 0, 0, 0.08),
+				0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 }
 
